@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <button class="boton" onclick="action()">Menu</button>
+        <a href="#" class="enlace ocultar">Inicio</a>
+        <a href="#" class="enlace ocultar">Servicios</a>
+        <a href="#" class="enlace ocultar">Nosotros</a>
+        <a href="#" class="enlace ocultar">Contacto</a>
+    </nav>
+    <section>
+       <h1>Etiquetas HTML</h1>
+       <p>Html: indica el comienzo del documento HTML.</p>
+       <p>Body:  es el cuerpo de la página, donde va lo que se ve en el navegador al cargar una web. En el body van los textos, las imágenes y todos los contenidos de la web.</p>
+       <p>Title: Es el titulo de nuestra pagína</p>
+       <p>A: define los enlaces.</p>
+       <p>P: el texto dentro de esta etiqueta forma un párrafo.</p>
+       <h1>Etiquetas CSS</h1>
+       <p>Width: Ancho de un elemento.</p>
+       <p>Margin: Espacio que se añade entre el elemento y sus vecinos. Se puede diferencia por lado (arriba, abajo, izquierda, derecha).</p>
+       <p>Color: Color del elemento. Se puede especificar en diferentes formatos como palabras predefinidas (red, green, etc.) RGB o como valor hexadecimal.</p>
+       <p>Background-color: Color del fondo del elemento.</p>
+       <p>Padding: Relleno interior que se añade en los bordes del A diferencia de margin, cuenta para el tamaño del elemento.</p>
+       <h1>Etiquetas JS</h1>
+       <p>Var: Las variables en JavaScript se definen usando esta palabra clave</p>
+       <p>Document.title: Muestra el título de la página actual</p>
+       <p>Document.getElementById(): Permite identificar un elemento en una página por su identidad (ID).</p>
+       <p>Location.href: Encadenando location.href se refresca el contenido de la página (vuelve a cargarla).</p>
+       <p>History.back(): Página anterior en el historial</p>
+    </section>
+    <script>
+       function action(){
+          var ancla = document.getElementsByClassName('enlace');
+          for(var i = 0; i < ancla.length; i++){
+              ancla[i].classList.toggle('ocultar');
+          }
+
+       }
+    </script>
+</body>
+</html>
